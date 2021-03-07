@@ -2,7 +2,9 @@ import * as scanView from './views/scanView';
 import {ClearLoader, ClearScanBtn, elements , RenderLoader , RndedErrorMesg} from './views/base';
 import Scan from './modules/Scan';
 import Messages from './modules/Messages';
+import Contact from './modules/Contact';
 import * as MessageView from './views/MessageView';
+import * as ContactView from './views/contactView';
 
 
 
@@ -24,6 +26,17 @@ const displayMessages = async() => {
     console.log(msgs.result);
     console.log("Hi form message")
 }
+
+elements.contactForm.addEventListener("submit" , async (e) => {
+    e.preventDefault();
+    const email= ContactView.getEmail();
+    const fname = ContactView.getFName();
+    const msg = ContactView.getMessage();
+    const contact = new Contact(fname , email , msg);
+    console.log(contact);
+    await contact.getResult();
+    console.log(contact.result);
+})
 
 window.addEventListener('keypress' , e => {
     console.log(e);

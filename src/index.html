@@ -230,9 +230,9 @@
     </div>
     <div class="section section-contact-us text-center">
       <div class="container">
-        <h2 class="title">Want to work with us?</h2>
-        <p class="description">Your project is very important to us.</p>
-        <div class="row">
+        <h2 class="title">تواصل معنا</h2>
+        <p class="description">رأيك يهمنا</p>
+        <form method="POST" class="contact-us row">
           <div class="col-lg-6 text-center col-md-8 ml-auto mr-auto">
             <div class="input-group input-lg">
               <div class="input-group-prepend">
@@ -240,7 +240,7 @@
                   <i class="now-ui-icons users_circle-08"></i>
                 </span>
               </div>
-              <input type="text" class="form-control" placeholder="First Name...">
+              <input type="text" class="fname form-control" placeholder="الاسم الأول">
             </div>
             <div class="input-group input-lg">
               <div class="input-group-prepend">
@@ -248,16 +248,16 @@
                   <i class="now-ui-icons ui-1_email-85"></i>
                 </span>
               </div>
-              <input type="text" class="form-control" placeholder="Email...">
+              <input type="text" class="email form-control" placeholder="البريد الالكتروني">
             </div>
             <div class="textarea-container">
-              <textarea class="form-control" name="name" rows="4" cols="80" placeholder="Type a message..."></textarea>
+              <textarea class="user-message form-control" name="name" rows="4" cols="80" placeholder="اكتب رسالة"></textarea>
             </div>
             <div class="send-button">
-              <a href="#pablo" class="btn btn-primary btn-round btn-block btn-lg">Send Message</a>
+              <button type="submit" class="btn btn-primary btn-round btn-block btn-lg">ارسل</button>
             </div>
           </div>
-        </div>
+        <form/>
       </div>
     </div>
     <footer class="footer footer-default">

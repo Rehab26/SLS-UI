@@ -4,7 +4,11 @@ export const elements = {
     btnScan : document.querySelector(".scan"),
     scanRow : document.querySelector('.scan-row'),
     scanCol : document.querySelector('.scan-col'),
-    messageBoard : document.querySelector('.message-list')
+    messageBoard : document.querySelector('.message-list'), 
+    emailForm : document.querySelector('.email'),
+    Fname : document.querySelector('.fname'),
+    userMessage : document.querySelector('.user-message'),
+    contactForm : document.querySelector('.contact-us')
 }
 
 export const RndedErrorMesg = (msg) => {
