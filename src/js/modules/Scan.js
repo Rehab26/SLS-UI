@@ -9,7 +9,7 @@ export default class Scan {
     async getResult(){
         try
         {
-            const result = await axios(`https://localhost:5000/api/scan/scan?url=${this.url}`);
+            const result = await axios(`http://localhost:5000/api/scan/scan?url=${this.url}`);
             this.result = result;
 
         }
